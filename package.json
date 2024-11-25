@@ -1,0 +1,27 @@
+{
+  "name": "cadastroitens",
+  "version": "1.0.0",
+  "description": "atividade4",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielmromao/CadastroItens.git"
+  },
+  "author": "Gabriel Romão",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabrielmromao/CadastroItens/issues"
+  },
+  "homepage": "https://github.com/gabrielmromao/CadastroItens#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "express": "^4.21.1",
+    "express-session": "^1.18.1",
+    "nodemon": "^3.1.7"
+  }
+}
