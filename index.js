@@ -15,6 +15,7 @@ const app = express();
 //seja capaz de lembrar com quem ela está falando....
 //Em outras palavras, session, permite identificar individualmente cada
 //usuário da aplicação.
+app.use(express.urlencoded({ extended: true }));
 app.use(session({
     secret: 'M1nh4Chav3S3cr3t4',
     resave: false,
