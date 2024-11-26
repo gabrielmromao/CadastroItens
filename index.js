@@ -8,6 +8,7 @@ import session from 'express-session';
 //solicite e retorne cookies
 import cookieParser from 'cookie-parser';
 
+import path from "path";
 
 const app = express();
 
@@ -15,6 +16,7 @@ const app = express();
 //seja capaz de lembrar com quem ela está falando....
 //Em outras palavras, session, permite identificar individualmente cada
 //usuário da aplicação.
+app.use(express.static(path.join(process.cwd(),'./paginas/publicas')));
 app.use(express.urlencoded({ extended: true }));
 app.use(session({
     secret: 'M1nh4Chav3S3cr3t4',
